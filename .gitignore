@@ -1,0 +1,7 @@
+.env
+.spotify_token.json
+.secret_key
+albuns.db
+__pycache__/
+*.pyc
+.venv/

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>entrar — álbuns</title>
+  <meta name="description" content="Suas playlists e álbuns do Spotify numa vitrine só sua.">
+  <meta name="theme-color" content="#14131a">
+  <meta property="og:title" content="álbuns">
+  <meta property="og:description" content="Suas playlists e álbuns do Spotify numa vitrine só sua.">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/static/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .login { max-width: var(--max); margin: 0 auto; padding: 2.5rem var(--pad) 4rem; display: grid; gap: 2.5rem; }
+    @media (min-width: 820px) { .login { grid-template-columns: minmax(0, 1fr) minmax(0, 24rem); align-items: start; gap: 4rem; } }
+    .lead { margin: 0; max-width: 30rem; font-size: clamp(1.15rem, 2.6vw, 1.5rem); line-height: 1.3; font-weight: 600; text-wrap: balance; }
+    .panel { background: var(--raised); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; display: grid; gap: 1rem; }
+    .panel h2 { margin: 0; font-size: 1.15rem; }
+    .panel p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .panel .cta { margin: .25rem 0 0; text-align: center; font-size: 1.05rem; }
+    .erro { padding: .75rem 1rem; border: 1px solid #6b3a3a; border-radius: 6px; background: #2a1c1f; color: #ffd0d0; font-size: .95rem; }
+    .erro:empty { display: none; }
+    .perm { margin: 0; padding-left: 1.1rem; color: var(--muted); font-size: .85rem; }
+    .brand-mark { margin-top: 2rem; color: var(--ink); opacity: .85; }
+    .brand-mark .mark { height: 2.2rem; }
+  </style>
+</head>
+<body>
+  <header class="wall-head">
+    <h1 id="site-title">{{WORDMARK}}</h1>
+  </header>
+  <main class="login">
+    <div>
+      <p class="lead">Suas playlists e álbuns do Spotify numa vitrine só sua. Você escolhe o gênero de cada uma e quem colaborou.</p>
+      <div class="brand-mark">{{MARK}}</div>
+    </div>
+    <section class="panel" aria-labelledby="entrar-h">
+      <h2 id="entrar-h">Entrar</h2>
+      <div class="erro" role="alert">{{ERRO}}</div>
+      <a class="cta" href="/login">entrar com o Spotify</a>
+      <p>O Spotify vai pedir permissão só para <strong>ler</strong> o que está abaixo. O site não muda nada na sua conta.</p>
+      <ul class="perm">
+        <li>suas playlists</li>
+        <li>os álbuns que você salvou</li>
+        <li>seu nome e sua foto de perfil</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

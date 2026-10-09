@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>álbuns</title>
+  <meta name="description" content="Minhas playlists do Spotify, tratadas como álbuns.">
+  <meta name="theme-color" content="#14131a">
+  <meta property="og:title" content="álbuns">
+  <meta property="og:description" content="Minhas playlists do Spotify, tratadas como álbuns.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wall">
+    <p id="sample-note" class="sample-note" hidden>Estes são dados de exemplo. Rode <code>python fetch_playlists.py</code> para trocar pelas suas playlists.</p>
+    <header class="wall-head">
+      <h1 id="site-title"><svg class="wordmark" viewBox="0 0 1942 800" role="img" aria-label="álbuns" focusable="false"><path fill="currentColor" d="M118 742Q86 742 61.5 727Q37 712 23 684Q9 656 9 617Q9 572 25 542Q41 512 66 492.5Q91 473 118.5 461.5Q146 450 168 442Q193 433 206.5 423Q220 413 225 399.5Q230 386 230 366Q230 338 222 324Q214 310 199 310Q185 310 177 322.5Q169 335 167 360.5Q165 386 169 425L19 409Q16 356 27 315Q38 274 61.5 246Q85 218 121 204Q157 190 205 190Q263 190 302.5 213.5Q342 237 362 285.5Q382 334 382 411V538Q382 570 382 602Q382 634 382 666Q382 698 382 730H248Q248 696 248 662.5Q248 629 248 595H240Q236 643 220 676Q204 709 178 725.5Q152 742 118 742ZM188 618Q198 618 205.5 612Q213 606 218 595Q223 584 225.5 571Q228 558 228 545V474L249 458Q241 470 231 478.5Q221 487 210.5 493.5Q200 500 190.5 507Q181 514 174 522Q167 530 162.5 542Q158 554 158 571Q158 598 167.5 608Q177 618 188 618ZM253 167H128L182 58H337L253 167ZM374 730V50H526V730H374ZM763 742Q734 742 712 725.5Q690 709 677 673Q664 637 659 579H651V730H519V481V50H673V149Q673 189 670.5 226.5Q668 264 663.5 299.5Q659 335 652 369H662Q669 309 683.5 270Q698 231 720.5 211.5Q743 192 773 192Q814 192 843 226.5Q872 261 887 323Q902 385 902 470Q902 567 883.5 627Q865 687 833.5 714.5Q802 742 763 742ZM714 626Q726 626 732.5 608.5Q739 591 742 557.5Q745 524 745 477Q745 423 742 389.5Q739 356 732 340.5Q725 325 714 325Q706 325 699.5 332Q693 339 688 352.5Q683 366 680 385Q677 404 675 427Q673 450 673 476V497Q673 521 675.5 544Q678 567 683.5 585.5Q689 604 696.5 615Q704 626 714 626ZM1004 742Q944 742 916.5 690Q889 638 889 526V202H1044V492Q1044 547 1050 571.5Q1056 596 1074 596Q1086 596 1092.5 586Q1099 576 1102.5 558Q1106 540 1106.5 513.5Q1107 487 1107 454V202H1261V487V730H1129V537H1121Q1121 616 1105.5 660.5Q1090 705 1063.5 723.5Q1037 742 1004 742ZM1254 730V407V202H1386V387H1394Q1394 314 1408 271Q1422 228 1448 209Q1474 190 1510 190Q1572 190 1600 240.5Q1628 291 1628 400V730H1473V442Q1473 386 1467.5 361Q1462 336 1444 336Q1426 336 1418.5 357Q1411 378 1409.5 412Q1408 446 1408 486V730H1254ZM1798 742Q1738 742 1698.5 724.5Q1659 707 1638.5 676.5Q1618 646 1614.5 608Q1611 570 1624 528L1759 516Q1756 546 1757 574.5Q1758 603 1767.5 621Q1777 639 1798 639Q1812 639 1819.5 629Q1827 619 1827 597Q1827 568 1814 549Q1801 530 1779.5 516Q1758 502 1732 489Q1712 478 1691 465.5Q1670 453 1652.5 435.5Q1635 418 1624 393.5Q1613 369 1613 335Q1613 290 1633.5 257.5Q1654 225 1693.5 207.5Q1733 190 1791 190Q1847 190 1888.5 209Q1930 228 1951 269.5Q1972 311 1965 380L1833 398Q1836 369 1832 346.5Q1828 324 1818 311Q1808 298 1791 298Q1776 298 1768.5 308.5Q1761 319 1761 335Q1761 353 1771 366Q1781 379 1798 389Q1815 399 1836 410Q1861 423 1886.5 439Q1912 455 1933 476.5Q1954 498 1966.5 526.5Q1979 555 1979 593Q1979 634 1960.5 668Q1942 702 1902.5 722Q1863 742 1798 742Z"/></svg></h1>
+      <div id="owner" class="owner" hidden></div>
+    </header>
+    <main>
+      <ul id="gallery" class="gallery"></ul>
+      <p id="status" class="status" role="status">Carregando os álbuns…</p>
+    </main>
+    <footer id="foot" class="foot"></footer>
+  </div>
+
+  <section id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <div class="sheet-inner">
+      <div class="sheet-bar">
+        <button id="back" class="back" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          voltar
+        </button>
+        <span class="mark-wrap"><svg class="mark" viewBox="9 58 373 684" role="img" aria-label="álbuns" focusable="false"><path fill="currentColor" d="M118 742Q86 742 61.5 727Q37 712 23 684Q9 656 9 617Q9 572 25 542Q41 512 66 492.5Q91 473 118.5 461.5Q146 450 168 442Q193 433 206.5 423Q220 413 225 399.5Q230 386 230 366Q230 338 222 324Q214 310 199 310Q185 310 177 322.5Q169 335 167 360.5Q165 386 169 425L19 409Q16 356 27 315Q38 274 61.5 246Q85 218 121 204Q157 190 205 190Q263 190 302.5 213.5Q342 237 362 285.5Q382 334 382 411V538Q382 570 382 602Q382 634 382 666Q382 698 382 730H248Q248 696 248 662.5Q248 629 248 595H240Q236 643 220 676Q204 709 178 725.5Q152 742 118 742ZM188 618Q198 618 205.5 612Q213 606 218 595Q223 584 225.5 571Q228 558 228 545V474L249 458Q241 470 231 478.5Q221 487 210.5 493.5Q200 500 190.5 507Q181 514 174 522Q167 530 162.5 542Q158 554 158 571Q158 598 167.5 608Q177 618 188 618ZM253 167H128L182 58H337L253 167Z"/></svg></span>
+      </div>
+      <div id="sheet-body"></div>
+    </div>
+  </section>
+
+  <noscript><p class="status">Este site precisa de JavaScript para mostrar os álbuns.</p></noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
